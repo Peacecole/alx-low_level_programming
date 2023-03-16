@@ -1,3 +1,2 @@
 #!/bin/bash
-gcc -S masn=intel $CFILE 
-
+gcc -S masn=intel $CFILE
