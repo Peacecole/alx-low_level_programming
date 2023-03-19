@@ -10,11 +10,11 @@ int main(void)
 
 	c = 'a';
 
-	while (c <= 'z')
-	{
+	while
+		(c <= 'z') {
 		if ((c != 'q' && c != 'e') && c <= 'z')
 			putchar(c);
 	}
-	putchar('\n');
+	printf("c\n");
 	return (0);
 }
