@@ -1,16 +1,14 @@
 #include "main.h"
 /**
- * mul - Return the product of two numbers
- * @num1, num2: integer type letter
- * Return: product of two numbers
+ * print_numbers - prints numbers from 0 to 9
+ * @num: integer type 
+ * Return: always 0
  */
-int mul(int num1, int num2)
+void print_numbers(void)
 {
-	int prod;
+	int x;
 
-	prod = num1 * num2;
-	_putchar("%d", prod)
-		_putchar("\n")
-		
-		return (0);
+	for (x = '0'; x <= '9'; x++)
+		_putchar(x);
+	_putchar('\n');
 }
