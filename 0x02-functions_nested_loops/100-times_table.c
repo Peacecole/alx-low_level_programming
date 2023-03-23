@@ -9,9 +9,9 @@ void print_times_table(int num)
 	int i;
 	int x = 0;
 	int y;
-	
+
 	if (num > 15 || num < 0)
-			return;
+		return;
 
 	while (x <= num)
 	{
