@@ -4,18 +4,18 @@
  * If `n` is greater than 15 or less than 0, print nothing.
  * @num: int type number
  */
-void print_times_table(int num)
+void print_times_table(int n)
 {
 	int i;
 	int x = 0;
 	int y;
 
-	if (num > 15 || num < 0)
+	if (n > 15 || n < 0)
 		return;
 
-	while (x <= num)
+	while (x <= n)
 	{
-		for (i = 0; i <= num; i++)
+		for (i = 0; i <= n; i++)
 		{
 			y = x * i;
 
@@ -40,7 +40,7 @@ void print_times_table(int num)
 			else
 				_putchar(y + '0');
 
-			if (i != num)
+			if (i != n)
 			{
 				_putchar(',');
 				_putchar(' ');
