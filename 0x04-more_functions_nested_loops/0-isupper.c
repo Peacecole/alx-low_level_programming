@@ -6,7 +6,7 @@
  */
 int _isupper(int upper)
 {
-	if (upper > 65 && upper < 90)
+	if (upper > 64 && upper < 91)
 		return (1);
 	else
 		return (0);
