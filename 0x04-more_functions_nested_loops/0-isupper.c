@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _islower - Return 1 if letter is lowercase and 0 if not.
- * @lower: char type letter
- * Return: 1 if lowercase, 0 if not lowercase
+ * _isupper - Return 1 if letter is uppercase and 0 if not.
+ * @upper: char type letter
+ * Return: 1 if uppercase, 0 if not uppercase
  */
 int _isupper(int upper)
 {
-        if (upper > 65 && upper < 90)
-                return (1);
-        else
-                return (0);
+	if (upper > 65 && upper < 90)
+		return (1);
+	else
+		return (0);
 }
