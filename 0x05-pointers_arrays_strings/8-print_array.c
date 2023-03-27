@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - prints a number of elements of a given 
+ * print_array - prints a number of elements of a giveni
  * array of integers
  * @a: array of integers
  * @n: number of elements of the array to be printed
@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 
 		if (j != (n - 1))
 		{
-			printf(",");
+			printf(", ");
 		}
 	}
 	printf("\n");
