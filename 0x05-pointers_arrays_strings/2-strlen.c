@@ -5,11 +5,12 @@
  * @str: the string whose length is to be established
  * Return: always 0
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int count;
+	size_t length = 0;
 
-	for (count = 0; str[count] != '\0'; ++count);
+	while (*s++)
+		length++;
 
-	return count;
+	return (length);
 }
