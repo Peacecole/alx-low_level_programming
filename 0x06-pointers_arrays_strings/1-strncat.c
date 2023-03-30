@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * strncat - mergers two string with at most n bytes
+ * _strncat - concatenates two string with at most n bytes
  * @dest: pointer to destination string
  * @src: source of string to be merged
  * @n: counter integer
