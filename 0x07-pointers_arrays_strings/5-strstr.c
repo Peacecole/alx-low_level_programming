@@ -14,7 +14,6 @@ char *_strstr(char *haystack, char *needle)
 	char *occ, *temp;
 
 	if (!*needle) 
-
 		return (haystack);
 
 	while (*haystack)
@@ -22,7 +21,6 @@ char *_strstr(char *haystack, char *needle)
 
 		if (*haystack == *needle)
 		{
-
 			occ = haystack;
 			temp = needle;
 
@@ -31,14 +29,12 @@ char *_strstr(char *haystack, char *needle)
 
 				if (*haystack++ != *temp++)
 				{
-
-					haystack = occ;
+				haystack = occ;
 				break;
 				}
 			}
 
 			if (occ != haystack)
-
 				return (occ);
 		}
 
