@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 
 	char *occ, *temp;
 
-	if (!*needle) 
+	if (!*needle)
 		return (haystack);
 
 	while (*haystack)
