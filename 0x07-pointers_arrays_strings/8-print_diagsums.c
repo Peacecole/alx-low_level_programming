@@ -24,21 +24,21 @@ void print_diagsums(int *a, int size)
 	{
 
 		if (x == diag1 + (row * size))
-
+		{
 			sum1 += a[x];
-
+		}
 		if (x == (size - diag2 - 1) + (row * size))
-
+		{
 			sum2 += a[x];
-
+		}
 		if (((x + 1) % size) == 0)
-
+		{
 			row++;
 			diag1++;
 			diag2++;
-			primC++;
+			x++;
+		}
 	}
-
 	printf("%d", sum1);
 	printf("%d\n", sum2);
 }
