@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * main - passing argc
- * @argc: nnumber of arguments
- *
+ * @argc: number of arguments
+ * @agrv: displays the arguments passed to a program
  * Return: always 0
  */
 int main(int argc, char *argv[])
