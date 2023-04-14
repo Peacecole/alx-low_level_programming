@@ -40,6 +40,16 @@ int _strlen(char *str)
 	return (i);
 }
 /**
+ * errors - takes care of errors in main function
+ */
+void errors(void)
+{
+
+	printf("Error\n");
+
+	exit(98);
+}
+/**
  * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
@@ -51,11 +61,10 @@ int main(int argc, char *argv[])
 	int len1, len2, len3, i, carry, f_digit, s_digit, *result, j = 0;
 
 	str1 = argv[1], str2 = argv[2];
-
 	if (argc != 3 || !digit_test(str1) || !digit_test(str2))
-		len1 = _strlen(str1);
-		len2 = _strlen(str2);
-		len3 = len1 + len2 + 1;
+		errors();
+	if (argc != 3 || !digit_test(str1) || !digit_test(str2))
+		len1 = _strlen(str1), len2 = _strlen(str2), len3 = len1 + len2 + 1;
 		result = malloc(sizeof(int) * len3);
 		if (!result)
 			return (1);
