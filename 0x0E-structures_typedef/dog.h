@@ -13,13 +13,13 @@ struct dog
 	char *owner;
 };
 /**
- * dog_ - type definition for the dog structure
+ * dog_t - type definition for the dog structure
  */
-typedef struct dof dog_;
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_ *new_dog(char *name, float age, char *owner);
-void free_dog(dog_ *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif
