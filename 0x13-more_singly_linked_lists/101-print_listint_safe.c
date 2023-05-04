@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 size_t looped_listint_len(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
 /**
  * looped_listint_len - counts the number of nodes in a looped linked
  * list listint_t
@@ -87,7 +88,7 @@ size_t print_listint_safe(const listint_t *head)
 			head = head->next;
 		}
 
-		printf(" ->[%p]%d\n", (void *)head, head->n);
+		printf(" -> [%p]%d\n", (void *)head, head->n);
 	}
 
 	return (node);
