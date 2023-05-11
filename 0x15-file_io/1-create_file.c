@@ -2,20 +2,19 @@
 /**
  * create_file - creates a file
  * @file_name: pointer to the name of the file to be created
- * @text_content: NULL terminated string to write to the file
+ * @text_content: pointer NULL terminated string to write to the file
  * Return: 1 when successful, -1 when not successful
  */
 int create_file(const char *file_name, char *text_content)
 {
-	int x, w;
-	int len = 0;
+	int x, w, len = 0;
 
 	if (file_name == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (len = 0; text_content[len];)
+		for (len = 0; text_content[len]; )
 			len++;
 	}
 
