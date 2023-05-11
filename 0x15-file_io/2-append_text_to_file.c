@@ -3,7 +3,7 @@
  * append_text_to_file - appends text at the end of a file
  * @filename: pointer to the name of the file to be amended
  * @text_content: string to be added to the file
- * Return: fail or no file -1, 1 if successful
+ * Return: -1 NULL or fail 1 on success
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
