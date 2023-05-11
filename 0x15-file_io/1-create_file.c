@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * create_file - creates a file
  * @filename: pointer to the name of the file to be created
