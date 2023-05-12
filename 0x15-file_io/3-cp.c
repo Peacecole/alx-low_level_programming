@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *create_buffer(char *file);
-void close_file(int d);
-
 /**
  * create_buffer - allocates a buffer memory of 1024 bytes
  * @file: pointer to the file being stored in the buffer
