@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_buffer - create a buffer memory of 1024 bytes
+ * create_buffer - allocates a buffer memory of 1024 bytes
  * @file: pointer to the file being stored in the buffer
  * Return:  pointer to the buffer
  */
@@ -45,7 +45,7 @@ void close_file(int d)
  * @argv: ponters to the argumnets passed to the program
  * Return: nothing
  *
- * Description: 97 exit if the argument count is incorrect
+ * Description: If the argument count is incorrect, exit code 97
  * If file_from doesnt exist or cannot be read, exit code 98
  * If file_to cannot be created or written to, exit code 99
  * If file_to or file_from cannot be closed, exit code 100
