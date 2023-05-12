@@ -44,6 +44,11 @@ void close_file(int d)
  * @argc: number of arguments to the program
  * @argv: ponters to the argumnets passed to the program
  * Return: nothing
+ *
+ * Description: 97 exit if the argument count is incorrect
+ * 98 exit if file_from doesnt exist or cannot be read
+ * 99 exit if file_to cannot be created or written to
+ * 100 exit if file_to or file_from cannot be closed
  */
 int main(int argc, char *argv[])
 {
