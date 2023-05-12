@@ -46,9 +46,9 @@ void close_file(int d)
  * Return: nothing
  *
  * Description: 97 exit if the argument count is incorrect
- * 98 exit if file_from doesnt exist or cannot be read
- * 99 exit if file_to cannot be created or written to
- * 100 exit if file_to or file_from cannot be closed
+ * If file_from doesnt exist or cannot be read, exit code 98
+ * If file_to cannot be created or written to, exit code 99
+ * If file_to or file_from cannot be closed, exit code 100
  */
 int main(int argc, char *argv[])
 {
