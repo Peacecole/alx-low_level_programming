@@ -15,7 +15,7 @@ char *create_buffer(char *file)
 
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
@@ -35,7 +35,7 @@ void close_file(int d)
 
 	if (x == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close d D_VALUE %d\n", d);
+		dprintf(STDERR_FILENO, "Error: Can't close d %d\n", d);
 		exit(100);
 	}
 }
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 	do {
 		if (fr == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
