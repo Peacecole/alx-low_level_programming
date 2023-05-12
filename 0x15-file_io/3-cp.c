@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_buffer - a buffer memory of 1024 bytes
+ * create_buffer - create a buffer memory of 1024 bytes
  * @file: pointer to the file being stored in the buffer
  * Return:  pointer to the buffer
  */
