@@ -9,7 +9,7 @@
  * @value: value to search
  * Return: Always EXIT_SUCCESS
  *
- * Description: Prints the compared value to the value being searched 
+ * Description: Prints the compared value to the value being searched
  */
 int linear_search(int *array, size_t size, int value)
 {
