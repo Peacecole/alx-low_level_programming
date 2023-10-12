@@ -4,10 +4,10 @@
  * linear_search - searches for a value in an array of
  * integers using the Linear search algorithm
  *
- * @array: input array to be searched
- * @size: size of the array being searched
- * @value: value to search in
- * Return: Always EXIT_SUCCESS
+ * @array: pointer to the first element of the array to search in
+ * @size: the number of elements in the array
+ * @value: value to search for
+ * Return: first index where the value is located, Otherwise -1
  *
  * Description: Prints the compared value to the value being searched
  */
