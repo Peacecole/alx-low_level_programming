@@ -7,7 +7,7 @@
  * @array: input array to be searched
  * @size: size of the array being searched
  * @value: value to search
- * Return: always EXIT_SUCCESS
+ * Return: Always EXIT_SUCCESS
  *
  * Description: Prints the compared value to the value being searched 
  */
