@@ -10,8 +10,6 @@
  *
  * Return: If the value is not present or the array is NULL, -1.
  * Otherwise, the index where the value is located
- *
- * Description: Prints the compared value to the value being searched
  */
 int linear_search(int *array, size_t size, int value)
 {
