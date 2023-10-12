@@ -8,6 +8,8 @@
  * @size: size of the array being searched
  * @value: value to search
  * Return: always EXIT_SUCCESS
+ *
+ * Description: Prints the compared value to the value being searched 
  */
 int linear_search(int *array, size_t size, int value)
 {
