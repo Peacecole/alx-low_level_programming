@@ -2,11 +2,11 @@
 
 /**
  * linear_search - searches for a value in an array of
- * integers, uses the Linear search algorithm
+ * integers using the Linear search algorithm
  *
  * @array: input array to be searched
  * @size: size of the array being searched
- * @value: value to search
+ * @value: value to search in
  * Return: Always EXIT_SUCCESS
  *
  * Description: Prints the compared value to the value being searched
